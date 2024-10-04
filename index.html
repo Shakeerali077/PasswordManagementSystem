@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <!-- Title of the webpage -->
+    <title>Login Screen</title>
+  </head>
+
+  <body>
+    <!-- Main container for the whole login screen layout -->
+    <div class="container">
+      <!-- Div to contain both the image and login form sections -->
+      <div class="main-container">
+        <!-- Section for displaying the login image -->
+        <div class="login-img">
+          <!-- Decorative outline -->
+          <div class="outline"></div>
+
+          <!-- Actual login image -->
+          <img class="img" src="/assets/Group 4527@2x.png" alt="img" />
+        </div>
+
+        <!-- Container for the login form -->
+        <div class="login-container">
+          <!-- Form for login input fields -->
+          <form class="login-form" id="login-form">
+            <!-- Grouping the form input elements -->
+            <div class="form-group">
+              <!-- Input for User ID -->
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="user-id"
+                  class="input-field"
+                  placeholder="User ID"
+                />
+              </div>
+
+              <!-- Input for Password -->
+              <div class="input-group">
+                <input
+                  type="password"
+                  id="password"
+                  class="input-field"
+                  placeholder="Password"
+                />
+
+                <!-- Eye icon for toggling password visibility -->
+                <img
+                  src="/assets/Component 2 – 1.svg"
+                  id="toggle-password"
+                  class="eye-icon"
+                  alt="eye icon"
+                />
+              </div>
+
+              <!-- 'Forgot Password?' link -->
+              <div class="forgot-password" id="forgot-password">
+                Forgot Password?
+              </div>
+
+              <!-- Error message display area -->
+              <div class="error-m">
+                <div class="error-message" id="error-message"></div>
+              </div>
+            </div>
+          </form>
+
+          <!-- Button for submitting the login form -->
+          <button class="login-btn" id="login-btn">Log In</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script link to the external JavaScript file for functionality -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

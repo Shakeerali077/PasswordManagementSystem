@@ -1,0 +1,160 @@
+/* Reset margin and padding for all elements, apply box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the main content on the page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem; /* Adds space around the container */
+}
+
+/* Main container for the entire login section */
+.main-container {
+  font-family: "Open Sans"; /* Applies the custom font */
+  background-color: #1c396c; /* Dark blue background */
+  display: flex;
+  flex-direction: column; /* Aligns children vertically */
+  justify-content: space-between; /* Adds space between elements */
+  align-items: center;
+  height: 1560px;
+  width: 720px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+/* Decorative outline under the login image */
+.outline {
+  position: relative;
+  top: 50px;
+  border-bottom: #707070 1px solid; /* Thin gray line */
+  width: 100%;
+}
+
+/* Styling for the image container */
+.login-img {
+  display: flex;
+  gap: 3rem; /* Adds space between image and other content */
+  flex-direction: column;
+  justify-content: space-evenly; /* Distributes items evenly */
+  width: 100%;
+  height: 100%;
+  align-items: center; /* Centers content horizontally */
+}
+
+/* Styling for the login image */
+.img {
+  width: 453px;
+  height: 352px;
+}
+
+/* Form container that wraps input fields */
+.form-group {
+  display: flex;
+  gap: 8rem; /* Large gap between input fields */
+  flex-direction: column; /* Aligns input fields vertically */
+  align-items: center;
+  justify-content: center;
+  width: 720px;
+  height: 938px;
+  background-color: #ffffff; /* White background */
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  border-radius: 40px 40px 0 0; /* Rounds the top edges */
+}
+
+/* Input group container */
+.input-group {
+  border: none;
+  width: 100%;
+  padding: 0px 10px 0px 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  border-bottom: 2px solid #707070; /* Bottom border for input fields */
+}
+
+/* General styling for the login form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Remove the outline when input fields are focused */
+.input-field:focus {
+  outline: none;
+}
+
+/* Input field styling */
+.input-field {
+  border: none;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+
+/* Error message container */
+.error-m {
+  width: 100%;
+  height: 30px;
+}
+
+/* Styling for error messages */
+.error-message {
+  color: #ff0001; /* Red for error messages */
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Styling for input groups with errors */
+.input-group.error {
+  border-bottom: 2px solid #ff0001; /* Red border on error */
+}
+
+/* 'Forgot password' link styling */
+.forgot-password {
+  width: 100%;
+  color: #3a69b2; /* Blue color for the link */
+  font-size: 28px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  display: block;
+  cursor: pointer; /* Makes the text clickable */
+}
+
+/* Styling for the login button */
+.login-btn {
+  width: 100%;
+  height: 112px;
+  padding: 15px;
+  background-color: #707070; /* Initial gray background */
+  font-size: 36px;
+  font-weight: 600;
+  color: #dadada; /* Light gray text */
+  border: none;
+  cursor: not-allowed; /* Disabled by default */
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Active state for login button (enabled) */
+.login-btn.active {
+  background-color: #69b76f; /* Green background for active state */
+  color: #ffffff; /* White text */
+  cursor: pointer; /* Changes cursor to indicate it's clickable */
+}
+
+/* Styling for the eye icon used to toggle password visibility */
+.eye-icon {
+  cursor: pointer; /* Makes the icon clickable */
+  margin-left: 10px; /* Adds space between icon and input field */
+}
