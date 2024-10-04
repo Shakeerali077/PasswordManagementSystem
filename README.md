@@ -110,5 +110,5 @@ password-management-system/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/password-management-system.git
+   git clone https://github.com/Shakeerali077/password-management-system.git
    ```
